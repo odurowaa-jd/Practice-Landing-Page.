@@ -6,15 +6,16 @@
         <title>MAJE Studios.</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="practice.css"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="C:\Users\user\Downloads\Sleek Logo with Abstract Icon Element (2).png" alt="image"/>
+                    <img src="images\Sleek Logo with Abstract Icon Element (2).png" alt="image"/>
                 </div>
-                <ul class="nav-links">
+                <div class="hamburger" id="hamburger">☰ </div>
+                <ul class="menu" id="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
@@ -32,7 +33,7 @@
                 <a href="#" class="btn">View My Work</a>
             </div>
             <div class="image">
-                <img src="C:\Users\user\Downloads\Untitled design (4).png" alt="hero image"/>
+                <img src="images\Untitled design (4).png" alt="hero image"/>
             </div>
             </div>
         </section>
@@ -77,6 +78,14 @@
                 </div>
             </div>
         </footer>
-    </body>
-    
+
+    <script>
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+</script>
+    </body>   
 </html>

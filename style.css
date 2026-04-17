@@ -10,6 +10,12 @@ body {
     color: #ffffff;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,20 +34,20 @@ body {
     width: 100px;
 }
 
-.nav-links {
+.menu {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.nav-links a {
+.menu a {
     text-decoration: none;
     color: #ffffff;
     font-size: 0.95rem;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
+.menu a:hover {
     color: #38bdf8;
 }
 
@@ -246,4 +252,26 @@ p {
         flex-direction: column;
         gap: 40px;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(15, 23, 42, 0.7);
+        padding: 20px 0;
+        margin-top: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
+
 }
